@@ -3,6 +3,7 @@ node_js: stable
 
 # S: Build Lifecycle
 install:
+  - npm install hexo-cli -g
   - npm install
 
 
@@ -10,7 +11,7 @@ install:
  # - npm install -g gulp
 
 script:
-  - hexo g
+  - npm run deploy
 
 after_script:
   - cd ./public
@@ -25,6 +26,10 @@ after_script:
 branches:
   only:
     - boke
+
+cache:
+  directories:
+    - node_modules
 env:
  global:
    - GH_REF: github.com/zilingyao/zilingyao.github.io.git
