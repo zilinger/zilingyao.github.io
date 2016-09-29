@@ -24,7 +24,7 @@ after_script:
 
 branches:
   only:
-    - blog-source
+    - boke
 env:
  global:
    - GH_REF: github.com/zilingyao/zilingyao.github.io.git
