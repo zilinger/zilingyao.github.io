@@ -19,7 +19,7 @@ after_script:
   - git config user.email "1961887727@qq.com"
   - git add .
   - git commit -m "Update boke"
-  - git push --quiet 
+  - git push --quiet origin master:master
 # E: Build LifeCycle
 
 branches:
