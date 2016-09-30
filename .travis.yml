@@ -17,9 +17,9 @@ after_script:
   - git init
   - git config user.name "zilingyao"
   - git config user.email "1961887727@qq.com"
-  - git add .
+  - git add --a
   - git commit -m "Update boke"
-  - git push --quiet origin master:master
+  - git push origin master:master
 # E: Build LifeCycle
 
 branches:
