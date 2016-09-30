@@ -92,7 +92,7 @@ Git是分布式的，这意味着它并不依赖于中心服务器，任何一�
 <meta property="og:site_name" content="进击的白小黑">
 <meta property="og:description" content="简介git命令是一些命令行工具的集合，它可以用来跟踪，记录文件的变动。比如你可以进行保存，比对，分析，合并等等。这个过程被称之为版本控制。已经有一系列的版本控制系统，比如SVN, Mercurial, Perforce, CVS, Bitkeepe等等。
 Git是分布式的，这意味着它并不依赖于中心服务器，任何一台机器都可以有一个本地版本的控制系统，我们称之为仓库。如果是多人协作的话，你需要还需要一">
-<meta property="og:updated_time" content="2016-09-30T09:27:40.806Z">
+<meta property="og:updated_time" content="2016-09-30T09:32:44.155Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git从入门到入门">
 <meta name="twitter:description" content="简介git命令是一些命令行工具的集合，它可以用来跟踪，记录文件的变动。比如你可以进行保存，比对，分析，合并等等。这个过程被称之为版本控制。已经有一系列的版本控制系统，比如SVN, Mercurial, Perforce, CVS, Bitkeepe等等。
@@ -344,9 +344,8 @@ Git是分布式的，这意味着它并不依赖于中心服务器，任何一�
 <p>在本地删除一个分支：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d Branch1</div></pre></td></tr></table></figure></p>
 <p>在github远程端删除一个分支：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin :Branch1   (分支名前的冒号代表删除)</div></pre></td></tr></table></figure></p>
 <p>push方法1：</p>
-<p>现在如果想直接Push这个develop分支上的内容到github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">　　git push -u origin</div></pre></td></tr></table></figure></p>
-<p>如果是新建分支第一次push，会提示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">　　fatal: The current branch develop has no upstream branch.</div><div class="line">　　To push the current branch and set the remote as upstream, use</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push --set-upstream origin develop</div></pre></td></tr></table></figure>
+<p>现在如果想直接Push这个develop分支上的内容到github<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push -u origin</div></pre></td></tr></table></figure></p>
+<p>如果是新建分支第一次push，会提示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">fatal: The current branch develop has no upstream branch.</div><div class="line">To push the current branch and set the remote as upstream, use</div><div class="line">git push --set-upstream origin develop</div></pre></td></tr></table></figure></p>
 <p>输入这行命令，然后输入用户名和密码，就push成功了。</p>
 <p>以后的push就只需要输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin</div></pre></td></tr></table></figure></p>
 <p>push方法2：</p>
